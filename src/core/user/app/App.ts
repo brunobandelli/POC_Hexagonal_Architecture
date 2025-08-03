@@ -1,10 +1,11 @@
-import PseudoCrypto from '../../../adapters/PseudoCrypto';
-import UserCollectionMemory from '../data/UserCollectionMemory';
+// import PseudoCrypto from '../../../adapters/PseudoCrypto';
+import RealCrypto from '../../../adapters/RealCrypto';
+import UserCollectionMemory from '../../../adapters/UserCollectionMemory';
 import UserLogin from '../service/UserLogin';
 import UserRegister from '../service/UserRegister';
 
 export default class App {
-    private cryptoProvider = new PseudoCrypto();
+    private cryptoProvider = new RealCrypto();
     private userCollection = new UserCollectionMemory()
 
   async run() {

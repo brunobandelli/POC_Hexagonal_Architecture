@@ -1,5 +1,5 @@
-import User from '../model/User';
-import UserCollection from '../model/UserCollection';
+import User from '../core/user/model/User';
+import UserCollection from '../core/user/model/UserCollection';
 
 export default class UserCollectionMemory implements UserCollection {
     static readonly users: User[] = []
