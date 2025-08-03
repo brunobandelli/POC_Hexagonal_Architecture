@@ -1,8 +1,8 @@
 // import PseudoCrypto from '../../../adapters/PseudoCrypto';
-import RealCrypto from '../../../adapters/RealCrypto';
-import UserCollectionMemory from '../../../adapters/UserCollectionMemory';
-import UserLogin from '../service/UserLogin';
-import UserRegister from '../service/UserRegister';
+import RealCrypto from '../adapters/RealCrypto';
+import UserCollectionMemory from '../adapters/UserCollectionMemory';
+import UserLogin from '../core/user/service/UserLogin';
+import UserRegister from '../core/user/service/UserRegister';
 
 export default class App {
     private cryptoProvider = new RealCrypto();
