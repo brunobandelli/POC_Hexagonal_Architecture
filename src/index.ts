@@ -1,5 +1,7 @@
-const sayHello = (text: string): string => {
-  return text
-}
+import App from './core/user/app/app';
 
-console.log(sayHello("Hello World!"));
+const app = new App();
+
+app.run().catch(err => {
+  console.error("Erro ao executar app:", err);
+});
